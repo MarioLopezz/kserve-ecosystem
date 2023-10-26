@@ -5,7 +5,6 @@ This repository houses Kubernetes YAML manifests to set up and deploy essential 
 ## Components included:
 
 - **Istio**: A service mesh providing traffic routing, load balancing, and security policies for services in Kubernetes.
-- **Jaeger**: A distributed tracing tool, used to monitor and troubleshoot performance issues in microservice systems.
 - **Kiali**: A user interface for observing the behavior of the Istio service mesh. It offers a detailed visual view of your architecture and how different microservices interact with each other.
 - **Knative**: A Kubernetes platform for building, deploying, and managing modern serverless applications.
 - **Kserve**: An extension of Knative providing machine learning model inference capabilities on Kubernetes.
@@ -21,7 +20,6 @@ This repository houses Kubernetes YAML manifests to set up and deploy essential 
 2. Apply the manifests in the appropriate order:
     ```bash
     kubectl apply -f istio/
-    kubectl apply -f jaeger/
     kubectl apply -f kiali/
     kubectl apply -f knative/
     kubectl apply -f kserve/
