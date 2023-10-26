@@ -31,9 +31,3 @@ spec:
       - name: "Istio Mesh Dashboard"
       - name: "Istio Control Plane Dashboard"
       - name: "Istio Performance Dashboard"
-    tracing:
-      enabled: true
-      # Make sure the URL you provide corresponds to the non-GRPC enabled endpoint
-      # if you set "use_grpc" to false.
-      in_cluster_url: "http://jaeger-query.istio-system:16685/jaeger"
-      use_grpc: true
